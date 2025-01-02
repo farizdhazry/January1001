@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*hero section*/
+#hero{
+    position: relative;
+    background-image:url(./assets/6.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*nav bar*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10% ;
+    padding-right: 10%;
+    padding-bottom: 30px ;
+    background-color: rgb(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+}
+
+.nav-links{
+    color: white;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: rgb(230, 115, 115) ;
+    transition: all 400ms ease;
+}
+
+a:hover{
+    color: rgb(230, 115, 115);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color:rgb(230,115,115) ;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+span{
+    color: rgb(224, 114, 132);
+}
+
+/*home text design*/
+.home-text{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-note{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/*section*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.section-text {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/*Arissa H.*/
+#ArissaH{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.section-pic-container img{
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.about-her{   
+    margin-top: 30px; 
+    max-width: 1000px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/*our journey*/
+.section-pic-container2 img{
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.our-journey-pics{
+    animation: appear linear;
+    animation-timeline: view(); 
+    animation-range: entry 0 cover 40%;
+}
+
+/*12 notes*/
+
+.note-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: left;
+    margin-bottom: 40px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.note-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.note-title h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.note-text{
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+/*closing*/
+#closing{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column ;
+    
+}
+
+.closing-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.note-text-closing{
+    margin-top: 15px;
+    max-width: 900px;
+    line-height: 1.5;
+}
+
+/*footer*/
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid #ddd;
+    position: relative;
+}
+
+.footer-message p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.footer-symbols span {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.footer-closing {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+}
